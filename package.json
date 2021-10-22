@@ -1,6 +1,6 @@
 {
   "name": "mtg-cube-cheat-sheet",
-  "homepage": "http://brikr.github.io/mtg-cube-cheat-sheet/index.html",
+  "homepage": "http://brikr.github.io/mtg-cube-cheat-sheet",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
