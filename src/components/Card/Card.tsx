@@ -14,7 +14,7 @@ const Container = styled.div`
       justify-content: center;
     }
 
-    margin: 10px;
+    margin: 1em;
   `}
 `;
 
@@ -86,7 +86,7 @@ export const Card: React.FC<Props> = ({ scryfallId }) => {
             />
           </TitleLine>
           <TypeLine>{card.typeLine}</TypeLine>
-          <p
+          <div
             dangerouslySetInnerHTML={{
               __html: oracleTextToHTML(card.oracleText),
             }}
