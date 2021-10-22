@@ -17,8 +17,11 @@ const DEFAULT_SYMBOL_STYLES = css`
 `;
 
 export function oracleTextToHTML(oracleText: string): string {
-  // Start with the base Oracle text
-  let html = oracleText;
+  // Start with the base Oracle text wrapped in a p
+  let html = `<p>${oracleText}</p>`;
+
+  // Replace each newline with a fresh <p> tag
+  html = html.replaceAll("\n", "</p><p>");
 
   // For reminder text, surround parenthesis with <i> tags
   html = html.replaceAll("(", "<i>(");
