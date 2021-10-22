@@ -1,5 +1,6 @@
 {
   "name": "mtg-cube-cheat-sheet",
+  "homepage": "http://brikr.github.io/mtg-cube-cheat-sheet",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,8 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "pretty": "prettier-eslint \"$(pwd)/**/*.{js,jsx,ts,tsx}\" --write"
+    "pretty": "prettier-eslint \"$(pwd)/**/*.{js,jsx,ts,tsx}\" --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages --dist build --remote ssh"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +53,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.1",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.4.1",
     "prettier-eslint-cli": "^5.0.1",
     "prettier-plugin-organize-imports": "^2.3.4"

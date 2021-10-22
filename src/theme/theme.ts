@@ -17,7 +17,7 @@ export const lightTheme = {
   },
 };
 
-export const darkTheme = {
+export const darkTheme: typeof lightTheme = {
   ...theme,
   colors: {
     background: "#19181f",
